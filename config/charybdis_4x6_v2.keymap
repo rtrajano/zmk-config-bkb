@@ -93,7 +93,7 @@
       &mo  SPECIAL &trans       &trans       &trans       &trans       &trans                       &trans       &trans       &trans       &trans       &trans       &trans
       &trans       &none        &kp  C_S_TAB &kp      TAB &kp CTRL_TAB &none                        &kp    PG_UP &kp     HOME &kp       UP &kp      END &kp      DEL &trans
       &trans       &kp     LGUI &kp     LALT &kp    LCTRL &kp   LSHIFT &none                        &kp    PG_DN &kp     LEFT &kp     DOWN &kp    RIGHT &kp    ENTER &trans
-      &trans       &kp    LC(Z) &kp    LC(X) &kp    LC(C) &kp    LC(V) &none                        &none        &kp     BSPC &kp    ENTER &none        &kp     BSLH &trans
+      &trans       &kp    LC(Z) &kp    LC(X) &kp    LC(C) &kp    LC(V) &none                        &none        &kp     BSPC &kp     LBKT &kp     RBKT &kp     BSLH &trans
                                              &trans       &trans       &trans                       &trans       &trans
                                                           &trans       &trans                       &trans
       >;
