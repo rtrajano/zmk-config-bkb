@@ -266,7 +266,7 @@
  */
                         bindings = <
       &none        &kp       N7 &kp       N8 &kp       N9 &none                          &kp KP_ASTERISK &kp    KP_N7 &kp    KP_N8 &kp    KP_N9 &kp KP_MINUS
-      &mt LGUI MINUS &mt  LALT N4 &mt  LCTL N5 &mt LSHFT N6 &kp   PLUS                   &kp    KP_SLASH &kp    KP_N4 &kp    KP_N5 &kp    KP_N6 &kp  KP_PLUS
+      &mt LGUI MINUS &mt  LALT N4 &mt  LCTRL N5 &mt LSHFT N6 &kp   PLUS                  &kp    KP_SLASH &kp    KP_N4 &kp    KP_N5 &kp    KP_N6 &kp  KP_PLUS
       &kp      DOT &kp       N1 &kp       N2 &kp       N3 &kp       N0                   &kp       KP_N0 &kp    KP_N1 &kp    KP_N2 &kp    KP_N3 &kp   KP_DOT
                                              &trans       &trans       &trans    &kp KP_DOT      &kp KP_N0 &trans
                         >;
@@ -292,7 +292,7 @@
  */
                         bindings = <
       &kp      F12 &kp       F7 &kp       F8 &kp       F9 &kp     CAPS                   &kp KP_NUM   &kp      INS &kp    PSCRN &kp     SLCK &kp PAUSE_BREAK
-      &kp      F11 &kp       F4 &kp       F5 &kp       F6 &kp    K_APP                   &none        &sk    LSHFT &sk     LCTL &sk     LALT &sk     LGUI
+      &kp      F11 &kp       F4 &kp       F5 &kp       F6 &kp    K_APP                   &none        &sk    LSHFT &sk    LCTRL &sk     LALT &sk     LGUI
       &kp      F10 &kp       F1 &kp       F2 &kp       F3 &none                          &none        &none        &none        &none        &none
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
