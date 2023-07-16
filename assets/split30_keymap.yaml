@@ -1,0 +1,181 @@
+# bootstrapped from https://github.com/jcmkk3/zmk-config/blob/main/config/hummingbird.keymap
+layout:
+  ortho_layout:
+    split: true
+    rows: 3
+    columns: 5
+    thumbs: 2
+    drop_pinky: true
+    drop_inner: true
+draw_config:
+  # specify the size to bound the vertical dimension of your glyph, below are defaults
+  glyph_tap_size: 15
+  glyph_hold_size: 14
+  glyph_shifted_size: 14
+  glyphs:  # mapping of glyph name to be used to svg definition
+    bri_up: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+            <path d="M12 5l0 -2"></path>
+            <path d="M17 7l1.4 -1.4"></path>
+            <path d="M19 12l2 0"></path>
+            <path d="M17 17l1.4 1.4"></path>
+            <path d="M12 19l0 2"></path>
+            <path d="M7 17l-1.4 1.4"></path>
+            <path d="M6 12l-2 0"></path>
+            <path d="M7 7l-1.4 -1.4"></path>
+        </svg>
+    bri_down: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+           <path d="M12 5l0 .01"></path>
+           <path d="M17 7l0 .01"></path>
+           <path d="M19 12l0 .01"></path>
+           <path d="M17 17l0 .01"></path>
+           <path d="M12 19l0 .01"></path>
+           <path d="M7 17l0 .01"></path>
+           <path d="M5 12l0 .01"></path>
+           <path d="M7 7l0 .01"></path>
+        </svg>
+    vol_up: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M15 8a5 5 0 0 1 0 8"></path>
+           <path d="M17.7 5a9 9 0 0 1 0 14"></path>
+           <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"></path>
+        </svg>
+    vol_down: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M15 8a5 5 0 0 1 0 8"></path>
+           <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"></path>
+        </svg>
+    vol_mute: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M15 8a5 5 0 0 1 1.912 4.934m-1.377 2.602a5 5 0 0 1 -.535 .464"></path>
+           <path d="M17.7 5a9 9 0 0 1 2.362 11.086m-1.676 2.299a9 9 0 0 1 -.686 .615"></path>
+           <path d="M9.069 5.054l.431 -.554a.8 .8 0 0 1 1.5 .5v2m0 4v8a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l1.294 -1.664"></path>
+           <path d="M3 3l18 18"></path>
+        </svg>
+    usb_icon: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-usb" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+            <path d="M12 17v-11.5"></path>
+            <path d="M7 10v3l5 3"></path>
+            <path d="M12 14.5l5 -2v-2.5"></path>
+            <path d="M16 10h2v-2h-2z"></path>
+            <path d="M7 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+            <path d="M10 5.5h4l-2 -2.5z"></path>
+        </svg>
+    bt_icon: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bluetooth" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 8l10 8l-5 4l0 -16l5 4l-10 8"></path>
+        </svg>
+    screenshot: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-screenshot" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M7 19a2 2 0 0 1 -2 -2"></path>
+           <path d="M5 13v-2"></path>
+           <path d="M5 7a2 2 0 0 1 2 -2"></path>
+           <path d="M11 5h2"></path>
+           <path d="M17 5a2 2 0 0 1 2 2"></path>
+           <path d="M19 11v2"></path>
+           <path d="M19 17v4"></path>
+           <path d="M21 19h-4"></path>
+           <path d="M13 19h-2"></path>
+        </svg>
+    sel_all: |
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select-all" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M8 8m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
+           <path d="M12 20v.01"></path>
+           <path d="M16 20v.01"></path>
+           <path d="M8 20v.01"></path>
+           <path d="M4 20v.01"></path>
+           <path d="M4 16v.01"></path>
+           <path d="M4 12v.01"></path>
+           <path d="M4 8v.01"></path>
+           <path d="M4 4v.01"></path>
+           <path d="M8 4v.01"></path>
+           <path d="M12 4v.01"></path>
+           <path d="M16 4v.01"></path>
+           <path d="M20 4v.01"></path>
+           <path d="M20 8v.01"></path>
+           <path d="M20 12v.01"></path>
+           <path d="M20 16v.01"></path>
+           <path d="M20 20v.01"></path>
+        </svg>
+layers:
+  Luna Base Layer:
+    - [⟳ Repeat, W, F, P, B, J, L, U, Y, '''']
+    - [R, S, T, H, K, X, N, A, I, O]
+    - [C, G, D, M, ',', .]
+    - [{t: NAV, h: MO} , ␣ SPC, E, {t: SYM, h: MO}]
+  Navigation:
+  - [⭠🖥 Prev Desk, ⎗ Prev Tab, ↹ TAB, ⎘ Next Tab, 🖥⭢ Next Desk, ⇞ PG  UP, ⤒ HOME, 🡅 UP, ⤓ END, ⌦ DEL]
+  - [{t: ⊞ LGUI, h: sticky}, {t: ⌥ LALT, h: sticky}, {t: ⎈ LCTL, h: sticky}, {t: ⇧ LSFT, h: sticky}, '', ⇟ PG  DN, 🡄 LEFT, 🡇 DOWN, 🡆 RIGHT, ⮠ RET]
+  - [✂ CUT, ⧉ COPY, 📄 PASTE, ⌫ BSPC, '', '']
+  - [{type: held}, {t: SPEC, h: MO}, ⮠ RET, '']
+  Symbols:
+  - ['`', '%', '?', ':', '@', ^, ;, (, ), '~']
+  - ['!', +, '-', '=', '#', _, {t: ⇧ LSFT, h: sticky}, {t: ⎈ LCTL, h: sticky}, {t: ⌥ LALT, h: sticky}, {t: ⊞ LGUI, h: sticky}]
+  - [$, '*', /, \, '|', '&']
+  - ['', '', {t: SPEC, h: MO}, {type: held}]
+  Num:
+  - [{type: ghost}, 7, 8, 9, {type: ghost}, {type: ghost}, '=', '<', '>', {t: '', type: ghost}]
+  - [{type: ghost}, 4, 5, 6, {type: ghost}, {type: ghost}, {t: ⇧ LSFT, h: sticky}, {t: ⎈ LCTL, h: sticky}, {t: ⌥ LALT, h: sticky}, {t: ⊞ LGUI, h: sticky}]
+  - [1, 2, 3, 0, '[', ']']
+  - [{type: held}, '', '', {type: held}]
+  NumPad:
+  - ['', 7, 8, 9, {type: ghost}, '*', KP 7, KP 8, KP 9, '-']
+  - [⊞ LGUI, {t: 4, h: LALT}, {t: 5, h: LCTL}, {t: 6, h: LSFT}, 0, /, KP 4, KP 5, KP 6, '+']
+  - [1, 2, 3, KP 1, KP 2, KP 3]
+  - [{type: held}, {type: held}, KP DOT, KP 0]
+  F-keys: 
+  - [F12, F7, F8, F9, F10, ⇭ NumLk, ⎀ Insert, ⎙ PrtScr, ⇳ ScrLk, ⎊ Pause]
+  - [F11, F4, F5, F6, 𝌆 Menu, {type: ghost}, {t: ⇧ LSFT, h: sticky}, {t: ⎈ LCTL, h: sticky}, {t: ⌥ LALT, h: sticky}, {t: ⊞ LGUI, h: sticky}]
+  - [F1, F2, F3, {type: ghost}, {type: ghost}, {type: ghost}]
+  - ['', '', {type: held}, {type: held}]
+  SPEC: 
+  - ['&boot', '&reset', '', '', {t: BASE, h: TO}, {t: OUT USB, s: $$usb_icon$$}, {t: OUT BLE, s: $$bt_icon$$}, '', '&reset', '&boot']
+  - ['', $$vol_down$$, $$vol_up$$, '', {t: GAME, h: TO}, {t: CLEAR, s: $$bt_icon$$}, {t: BT  1, s: $$bt_icon$$}, {t: BT  2, s: $$bt_icon$$}, {t: BT  3, s: $$bt_icon$$}, {t: BT  4, s: $$bt_icon$$}]
+  - [$$bri_down$$, $$bri_up$$, '', EP ON, EP OFF, EP TOG]
+  - ['', '', '', '']
+  Gamepad:
+    - [T, Q, W, E, R, Y, U, I, O, P]
+    - [LSFT, A, S, D, F, H, J, K, L, '''']
+    - [Z, X, C, M, ',', .]
+    - [{t: NAV, h: MO} , SPC, N, {t: SYM, h: MO}]
+combos:
+- {p: [1, 2], k: V, l: [Luna Base Layer]}
+- {p: [2, 3], k: Q, l: [Luna Base Layer]}
+- {p: [21, 22], k: Z, l: [Luna Base Layer]}
+- {p: [11, 12], k: {t: LSFT, h: sticky}, l: [Luna Base Layer]}
+- {p: [17, 18], k: {t: RSFT, h: sticky}, l: [Luna Base Layer]}
+- {p: [26, 27], k: NUM PAD, l: [Luna Base Layer, NumPad, Gamepad]}
+- {p: [28, 29], k: F keys, l: [Luna Base Layer, F-keys, Gamepad]}
+- {p: [23, 24], k: BSPC, l: [Luna Base Layer, Gamepad]}
+- {p: [23, 25], k: Del Word, l: [Luna Base Layer, Gamepad], a: bottom, o: 0}
+- {p: [8, 9], k: DEL, l: [Luna Base Layer, Gamepad], a: top, o: -0.6, d: no}
+- {p: [19, 25], k: RET, l: [Luna Base Layer, Gamepad]}
+- {p: [0, 1], k: ESC, l: [Luna Base Layer, Gamepad], a: top, o: -0.6, d: no}
+- {p: [7, 8], k: '"', l: [Luna Base Layer, Gamepad]}
+- {p: [1, 11], k: '[', l: [Luna Base Layer]}
+- {p: [2, 12], k: '(', l: [Luna Base Layer]}
+- {p: [3, 13], k: '{', l: [Luna Base Layer]}
+- {p: [4, 14], k: '<', l: [Luna Base Layer]}
+- {p: [5, 15], k: '>', l: [Luna Base Layer]}
+- {p: [6, 16], k: '}', l: [Luna Base Layer]}
+- {p: [7, 17], k: ')', l: [Luna Base Layer]}
+- {p: [8, 18], k: ']', l: [Luna Base Layer]}
+- {p: [1, 8], k: 'Caps Lock', l: [Luna Base Layer, Gamepad], a: top, o: 0.28}
+- {p: [2, 7], k: 'Caps Word', l: [Luna Base Layer, Gamepad], a: top, o: -0.15}
+- {p: [0, 10], k: LCTL, l: [Gamepad]}
+- {p: [14, 22], k: V, l: [Gamepad]}
+- {p: [4, 14], k: G, l: [Gamepad]}
+- {p: [10, 20], k: B, l: [Gamepad]}
