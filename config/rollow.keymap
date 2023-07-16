@@ -13,7 +13,7 @@
 #define BASE    0
 #define APTHD   1
 #define GAME    2
-#define APTv3   3
+#define APT326  3
 #define NAV     4
 #define SYMBOLS 5
 #define NUMBERS 6
@@ -85,11 +85,11 @@
   &kp        V &kp        W &kp        F &kp        P &kp        B                   &kp        J &kp        L &kp        U &kp        Y &kp     APOS
   &kp        R &kp        S &kp        T &kp        H &kp        K                   &kp        X &kp        N &kp        A &kp        I &kp        O
   &key_repeat  &kp        C &kp        G &kp        D &kp        Q                   &kp        Z &kp        M &kp    COMMA &kp   PERIOD &key_repeat
-                                         &mo      NAV &kp    SPACE &mo NAV &mo SYMBOLS &kp      E &mo  SYMBOLS
+                                         &mo      NAV &mo    NAV &kp SPACE   &kp   E &mo  SYMBOLS &mo  SYMBOLS
 
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 apthd_layer {
@@ -112,10 +112,10 @@
   &kp        W &kp        F &kp        Y &kp        P &kp        B                   &kp        Q &kp        L &kp        O &kp        U &kp     APOS
   &kp        R &kp        S &kp        T &kp        H &kp        K                   &kp        J &kp        N &kp        E &kp        I &kp        A
   &kp        X &kp        C &kp        G &kp        D &kp        V                   &kp        Z &kp        M &key_repeat  &kp    COMMA &kp   PERIOD
-                                         &mo      NAV &kp    SPACE &mo NAV &mo SYMBOLS &sk  LSHFT &mo  SYMBOLS
+                                         &mo      NAV &mo    NAV &kp SPACE &mo SYMBOLS &sk  LSHFT &mo  SYMBOLS
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 game_layer {
@@ -138,14 +138,14 @@
   &kp        T &kp        Q &kp        W &kp        E &kp        R                   &kp        Y &kp        U &kp        I &kp        O &kp        P
   &kp    LSHFT &kp        A &kp        S &kp        D &kp        F                   &kp        H &kp        J &kp        A &kp        I &kp     APOS
   &kp    LCTRL &kp        Z &kp        X &kp        C &kp        V                   &kp        N &kp        M &kp    COMMA &kp   PERIOD &key_repeat
-                                         &mo      NAV &kp    SPACE &mo NAV &mo SYMBOLS &kp  LSHFT &mo  SYMBOLS
+                                         &mo      NAV &mo    NAV &kp SPACE &mo SYMBOLS &kp  LSHFT &mo  SYMBOLS
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
-                APTv3_layer {
-/* APTv3
+                APT326_layer {
+/* APT326
  * .-----------------------------------------.                    .-----------------------------------------.
  * | TAB  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  | BKSP |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -161,13 +161,13 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-      &none &kp        W &kp        G &kp        D &kp        F &kp        V                 &kp        Q &kp        L &kp        U &kp        O &kp        Y &none
-      &none &kp        R &kp        S &kp        T &kp        H &kp        B                 &kp        J &kp        N &kp        E &kp        A &kp        I &none
-      &none &kp        X &kp        C &kp        M &kp        P &kp        K                 &kp        Z &kp   PERIOD &kp    COMMA &kp     APOS &kp    UNDER &none
-                                &none        &mo      NAV &kp    SPACE                 &sk  LSHFT   &mo  SYMBOLS &mo      NAV
+      &kp        W &kp        C &kp        D &kp        F &kp        B                 &kp        J &kp        L &kp        U &kp        O &kp        Y
+      &kp        R &kp        S &kp        T &kp        H &kp        K                 &kp        X &kp        N &kp        E &kp        A &kp        I
+      &key_repeat  &kp        V &kp        G &kp        P &kp        Q                 &kp        Z &kp        M &kp    COMMA &kp   PERIOD &key_repeat
+                                &none        &mo      NAV &kp    SPACE                 &kp     APOS &mo  SYMBOLS &mo      NAV
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 nav_layer {
@@ -190,10 +190,10 @@
       &kp    S_PRV &kp  C_S_TAB &kp      TAB &kp CTRL_TAB &kp    S_NXT                   &kp    PG_UP &kp     HOME &kp       UP &kp      END &kp      DEL
       &sk     LGUI &sk     LALT &sk    LCTRL &sk    LSHFT &kp SCRNSHOT                   &kp    PG_DN &kp     LEFT &kp     DOWN &kp    RIGHT &kp    ENTER
       &kp    LC(Z) &kp    LC(X) &kp    LC(C) &kp    LC(V) &kp    LC(A)                   &none        &kp     BSPC &trans       &trans       &trans
-                                             &trans       &mo  SPECIAL &trans    &trans  &trans       &trans
+                                             &trans       &trans  &mo  SPECIAL   &trans  &trans       &trans
                             >;
 
-                            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+                            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
                 symbols_layer {
@@ -216,10 +216,10 @@
       &kp   ESCAPE &kp  PERCENT &kp    QMARK &kp    COLON &kp       AT                   &kp    CARET &kp     SEMI &kp     LPAR &kp     RPAR &kp    TILDE
       &kp     EXCL &kp     PLUS &kp    MINUS &kp    EQUAL &kp     HASH                   &kp    UNDER &sk   LSHIFT &sk    LCTRL &sk     LALT &sk     LGUI
       &kp    GRAVE &kp   DOLLAR &kp ASTERISK &kp    SLASH &kp     AMPS                   &kp     PIPE &kp     BSLH &kp     LBRC &kp     RBRC &kp    GRAVE
-                                             &trans       &trans       &trans    &trans  &mo  SPECIAL &trans
+                                             &trans       &trans     &trans  &mo SPECIAL &trans   &trans
                         >;
    
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
  
                  numbers_layer {
@@ -245,7 +245,7 @@
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
                  numpad_layer {
@@ -268,10 +268,10 @@
       &none        &kp       N7 &kp       N8 &kp       N9 &none                          &kp KP_ASTERISK &kp    KP_N7 &kp    KP_N8 &kp    KP_N9 &kp KP_MINUS
       &mt LGUI MINUS &mt  LALT N4 &mt  LCTRL N5 &mt LSHFT N6 &kp   PLUS                  &kp    KP_SLASH &kp    KP_N4 &kp    KP_N5 &kp    KP_N6 &kp  KP_PLUS
       &kp      DOT &kp       N1 &kp       N2 &kp       N3 &kp       N0                   &kp       KP_N0 &kp    KP_N1 &kp    KP_N2 &kp    KP_N3 &kp   KP_DOT
-                                             &trans       &trans       &trans    &kp KP_DOT      &kp KP_N0 &trans
+                                             &trans       &trans       &trans  &kp KP_N0 &kp KP_DOT      &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
                  fkeys_layer {
@@ -297,7 +297,7 @@
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
                 special_layer {
@@ -317,13 +317,13 @@
  *   Encoder Right: VOL_UP <-> VOL_D
  */
                         bindings = <
-      &bootloader  &sys_reset   &none        &none        &to     BASE                   &out OUT_USB &out OUT_BLE &none        &sys_reset   &bootloader
+      &bootloader  &sys_reset   &none        &to   APT326 &to     BASE                   &out OUT_USB &out OUT_BLE &none        &sys_reset   &bootloader
       &none        &kp   C_MUTE &kp C_VOL_DN &kp C_VOL_UP &to    APTHD                   &bt   BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
       &none        &kp     C_PP &kp C_BRI_DN &kp C_BRI_UP &to     GAME                   &none        &none        &none        &none        &none
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
    
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
         };
 };
