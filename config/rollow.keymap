@@ -89,7 +89,7 @@
 
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP>;
                 };
 
                 apthd_layer {
@@ -115,7 +115,7 @@
                                          &mo      NAV &kp    SPACE &mo NAV &mo SYMBOLS &sk  LSHFT &mo  SYMBOLS
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP>;
                 };
 
                 game_layer {
@@ -141,7 +141,7 @@
                                          &mo      NAV &kp    SPACE &mo NAV &mo SYMBOLS &kp  LSHFT &mo  SYMBOLS
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP>;
                 };
 
                 APTv3_layer {
@@ -167,7 +167,7 @@
                                 &none        &mo      NAV &kp    SPACE                 &sk  LSHFT   &mo  SYMBOLS &mo      NAV
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP>;
                 };
 
                 nav_layer {
@@ -193,7 +193,7 @@
                                              &trans       &mo  SPECIAL &trans    &trans  &trans       &trans
                             >;
 
-                            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
+                            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
                 };
 
                 symbols_layer {
@@ -219,7 +219,7 @@
                                              &trans       &trans       &trans    &trans  &mo  SPECIAL &trans
                         >;
    
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
  
                  numbers_layer {
@@ -245,7 +245,7 @@
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                  numpad_layer {
@@ -271,7 +271,7 @@
                                              &trans       &trans       &trans    &kp KP_DOT      &kp KP_N0 &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                  fkeys_layer {
@@ -297,7 +297,7 @@
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 special_layer {
@@ -323,7 +323,7 @@
                                              &trans       &trans       &trans    &trans  &trans       &trans
                         >;
    
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
         };
 };
