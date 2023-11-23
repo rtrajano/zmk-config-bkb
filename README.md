@@ -11,3 +11,6 @@ The base layer is [Aptmak](https://github.com/Apsu/aptmak), with V, Q, and Z, on
 
 ### [30 key (23332+2)](./assets/split30_keymap.yaml)
 ![30 key layout (generated with Caksoylar's keymap-drawer)](./assets/split30_keymap.svg)
+
+### [Glove80](./assets/glove80_keymap.yaml)
+![Glove80 layout (generated with Caksoylar's keymap-drawer)](./assets/glove80_keymap.svg)

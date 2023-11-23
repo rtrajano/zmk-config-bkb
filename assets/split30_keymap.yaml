@@ -1,13 +1,13 @@
-# bootstrapped from https://github.com/jcmkk3/zmk-config/blob/main/config/hummingbird.keymap
 layout:
-  ortho_layout:
-    split: true
-    rows: 3
-    columns: 5
-    thumbs: 2
-    drop_pinky: true
-    drop_inner: true
+  qmk_keyboard: berylline
 draw_config:
+  shrink_wide_legends: 0
+  svg_extra_style: |
+    rect.key { fill: #f6f8fa; stroke: #c9cccf; stroke-width: 1;}
+    rect.held, rect.combo.held { fill: #fdd;}
+    rect.ghost, rect.combo.ghost { fill: #b0b0b0; stroke-dasharray: none; stroke-width: 1;}
+    svg.keymap { background-color: #303030;}
+    text.label { stroke: none; fill: #e0f0f0;}
   # specify the size to bound the vertical dimension of your glyph, below are defaults
   glyph_tap_size: 15
   glyph_hold_size: 14
@@ -117,7 +117,7 @@ layers:
     - [C, G, D, M, ',', .]
     - [{t: NAV, h: MO} , ␣ SPC, E, {t: SYM, h: MO}]
   Navigation:
-  - [⭠🖥 Prev Desk, ⎗ Prev Tab, ↹ TAB, ⎘ Next Tab, 🖥⭢ Next Desk, ⇞ PG  UP, ⤒ HOME, 🡅 UP, ⤓ END, ⌦ DEL]
+  - [⭠🖳 Desk, ⎗ Prev Tab, ↹ TAB, ⎘ Next Tab, 🖳⭢ Desk, ⇞ PG  UP, ⤒ HOME, 🡅 UP, ⤓ END, ⌦ DEL]
   - [{t: ⊞ LGUI, h: sticky}, {t: ⌥ LALT, h: sticky}, {t: ⎈ LCTL, h: sticky}, {t: ⇧ LSFT, h: sticky}, '', ⇟ PG  DN, 🡄 LEFT, 🡇 DOWN, 🡆 RIGHT, ⮠ RET]
   - [✂ CUT, ⧉ COPY, 📄 PASTE, ⌫ BSPC, '', '']
   - [{type: held}, {t: SPEC, h: MO}, ⮠ RET, '']
@@ -132,7 +132,7 @@ layers:
   - [1, 2, 3, 0, '[', ']']
   - [{type: held}, '', '', {type: held}]
   NumPad:
-  - ['', 7, 8, 9, {type: ghost}, '*', KP 7, KP 8, KP 9, '-']
+  - [{type: ghost}, 7, 8, 9, {type: ghost}, '*', KP 7, KP 8, KP 9, '-']
   - [⊞ LGUI, {t: 4, h: LALT}, {t: 5, h: LCTL}, {t: 6, h: LSFT}, 0, /, KP 4, KP 5, KP 6, '+']
   - [1, 2, 3, KP 1, KP 2, KP 3]
   - [{type: held}, {type: held}, KP DOT, KP 0]
@@ -157,24 +157,24 @@ combos:
 - {p: [21, 22], k: Z, l: [Luna Base Layer]}
 - {p: [11, 12], k: {t: LSFT, h: sticky}, l: [Luna Base Layer]}
 - {p: [17, 18], k: {t: RSFT, h: sticky}, l: [Luna Base Layer]}
-- {p: [26, 27], k: NUM PAD, l: [Luna Base Layer, NumPad, Gamepad]}
-- {p: [28, 29], k: F keys, l: [Luna Base Layer, F-keys, Gamepad]}
+- {p: [26, 27], k: NUM PAD, l: [Luna Base Layer, NumPad, Gamepad], h: 30}
+- {p: [28, 29], k: F keys, l: [Luna Base Layer, F-keys, Gamepad], h: 30}
 - {p: [23, 24], k: BSPC, l: [Luna Base Layer, Gamepad]}
-- {p: [23, 25], k: Del Word, l: [Luna Base Layer, Gamepad], a: bottom, o: 0}
-- {p: [8, 9], k: DEL, l: [Luna Base Layer, Gamepad], a: top, o: -0.6, d: no}
+- {p: [23, 25], k: Del Word, l: [Luna Base Layer, Gamepad], a: bottom, o: 0, h: 30}
+- {p: [8, 9], k: DEL, l: [Luna Base Layer, Gamepad], a: top, s: 0.15, o: -0.7, d: no}
 - {p: [19, 25], k: RET, l: [Luna Base Layer, Gamepad]}
-- {p: [0, 1], k: ESC, l: [Luna Base Layer, Gamepad], a: top, o: -0.6, d: no}
+- {p: [0, 1], k: ESC, l: [Luna Base Layer, Gamepad], a: top, s: -0.15, o: -0.7, d: no}
 - {p: [7, 8], k: '"', l: [Luna Base Layer, Gamepad]}
-- {p: [1, 11], k: '[', l: [Luna Base Layer]}
-- {p: [2, 12], k: '(', l: [Luna Base Layer]}
-- {p: [3, 13], k: '{', l: [Luna Base Layer]}
-- {p: [4, 14], k: '<', l: [Luna Base Layer]}
-- {p: [5, 15], k: '>', l: [Luna Base Layer]}
-- {p: [6, 16], k: '}', l: [Luna Base Layer]}
-- {p: [7, 17], k: ')', l: [Luna Base Layer]}
-- {p: [8, 18], k: ']', l: [Luna Base Layer]}
-- {p: [1, 8], k: 'Caps Lock', l: [Luna Base Layer, Gamepad], a: top, o: 0.28}
-- {p: [2, 7], k: 'Caps Word', l: [Luna Base Layer, Gamepad], a: top, o: -0.15}
+- {p: [1, 11], k: '[', l: [Luna Base Layer], w: 20}
+- {p: [2, 12], k: '(', l: [Luna Base Layer], w: 20}
+- {p: [3, 13], k: '{', l: [Luna Base Layer], w: 20}
+- {p: [4, 14], k: '<', l: [Luna Base Layer], w: 20}
+- {p: [5, 15], k: '>', l: [Luna Base Layer], w: 20}
+- {p: [6, 16], k: '}', l: [Luna Base Layer], w: 20}
+- {p: [7, 17], k: ')', l: [Luna Base Layer], w: 20}
+- {p: [8, 18], k: ']', l: [Luna Base Layer], w: 20}
+- {p: [2, 7], k: 'Caps  Word', l: [Luna Base Layer], w: 61, h: 18, a: top, o: -0.15}
+- {p: [1, 8], k: 'Caps  Lock', l: [Luna Base Layer], w: 61, h: 18, a: top, o: 0.51}
 - {p: [0, 10], k: LCTL, l: [Gamepad]}
 - {p: [14, 22], k: V, l: [Gamepad]}
 - {p: [4, 14], k: G, l: [Gamepad]}
