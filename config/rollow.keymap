@@ -77,10 +77,10 @@
  *   Encoder Right: Left <-> Right
  */
         bindings = <
-  &kp        V &kp        W &kp        F &kp        P &kp        B                   &kp        J &kp        L &kp        U &kp        Y &kp     APOS
-  &kp        R &kp        S &kp        T &kp        H &kp        K                   &kp        X &kp        N &kp        A &kp        I &kp        O
-  &key_repeat  &kp        C &kp        G &kp        D &kp        Q                   &kp        Z &kp        M &kp    COMMA &kp   PERIOD &key_repeat
-                                         &mo      NAV &mo    NAV &kp SPACE   &kp   E &mo  SYMBOLS &mo  SYMBOLS
+  &kp        Q &kp        W &kp        F &kp        P &kp        B                   &kp        J &kp        L &kp        U &kp        Y &kp    COLON
+  &kp        A &kp        R &kp        S &kp        T &kp        G                   &kp        M &kp        N &kp        E &kp        I &kp        O
+  &kp        Z &kp        X &kp        C &kp        D &kp        V                   &kp        K &kp        H &kp        < &kp        > &kp    QMARK
+                            &mo      NAV &kp      DEL &kp BACKSPACE                  &kp    SPACE &kp    ENTER &mo  SYMBOLS
 
                         >;
 
