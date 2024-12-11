@@ -45,14 +45,9 @@
   #include "36key_combos.dtsi"
   
   chosen {
-    zmk,battery = &vbatt;
     zmk,matrix_transform = &five_column_transform;
   };
 
-  vbatt: vbatt {
-      compatible = "zmk,battery-nrf-vddh";
-      label = "VBATT";
-  };
 
   conditional_layers {
       compatible = "zmk,conditional-layers";
