@@ -55,7 +55,7 @@
  */
         bindings = <
   &kp        Q &kp        W &kp        F &kp        P &kp        B                   &kp        J &kp        L &kp        U &kp        Y &kp    COLON
-  &kp        A &kp        R &kp        S &kp        T &kp        G                   &kp        M &kp        N &kp        E &kp        I &kp        O
+  &hm   LGUI A &hm   LALT R &hm  LSHFT S &hm  LCTRL T &kp        G                   &kp        M &hm  LCTRL N &hm  LSHFT E &hm   LALT I &hm   LGUI O
   &kp        Z &kp        X &kp        C &kp        D &kp        V                   &kp        K &kp        H &kp    COMMA &kp   PERIOD &kp    SLASH
                             &lt  FUN ESC &lt  MED ESC &lt NAV BSPC                  &lt NSL SPACE &lt  SYM RET &lt  FUN RET
                         >;
